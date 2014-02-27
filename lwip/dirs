@@ -1,0 +1,6 @@
+DIRS = src\api \
+		src\core \
+		src\core\ipv4 \
+		src\core\snmp \
+		src\netif \
+		src

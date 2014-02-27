@@ -1,0 +1,18 @@
+TARGETNAME=lan
+TARGETPATH=..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+C_DEFINES = -DWIN9X_COMPAT_SPINLOCK
+
+TARGETLIBS=$(DDK_LIB_PATH)\tdi.lib \
+           $(DDK_LIB_PATH)\ndis.lib
+
+INCLUDES=..\include;..\lwip\src\include;..\tcpip\include
+
+PRECOMPILED_INCLUDE=precomp.h
+
+
+
+SOURCES= lan.c
+
+MSC_WARNING_LEVEL=/W3

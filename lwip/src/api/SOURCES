@@ -1,0 +1,20 @@
+TARGETNAME=lwip_api
+TARGETPATH=..\..\..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+#TARGETLIBS=
+			
+INCLUDES=..\..\..\include;..\include;..\include\ipv4;
+
+
+SOURCES=api_lib.c \
+		api_msg.c \
+		err.c \
+		netbuf.c \
+		netdb.c \
+		netifapi.c \
+		sockets.c \
+		tcpip.c
+
+MSC_WARNING_LEVEL=/W3
+

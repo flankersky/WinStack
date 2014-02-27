@@ -1,0 +1,24 @@
+TARGETNAME=network
+TARGETPATH=..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+INCLUDES=..\include;..\lwip\src\include;..\lwip\src\include\ipv4;..\tcpip\include
+
+C_DEFINES = -DWIN9X_COMPAT_SPINLOCK
+
+SOURCES= address.c \
+         checksum.c \
+	     icmp.c \
+         interface.c \
+         ip.c \
+         neighbor.c \
+         ports.c \
+         receive.c \
+		 router.c \
+		 routines.c \
+		 transmit.c \
+		 lock.c
+
+
+MSC_WARNING_LEVEL=/W3
+

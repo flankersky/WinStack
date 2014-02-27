@@ -1,0 +1,20 @@
+TARGETNAME=lwip_ipv4
+TARGETPATH=..\..\..\..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+
+			
+INCLUDES=..\..\..\..\include;..\..\include;..\..\include\ipv4
+
+
+SOURCES=autoip.c \
+		icmp.c \
+		igmp.c \
+		inet.c \
+		inet_chksum.c \
+		ip.c \
+		ip_addr.c \
+		ip_frag.c
+
+MSC_WARNING_LEVEL=/W3
+

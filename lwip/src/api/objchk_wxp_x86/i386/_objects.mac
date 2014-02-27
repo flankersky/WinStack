@@ -1,0 +1,23 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\api_lib.obj \
+ $(OBJ_PATH)\$O\api_msg.obj \
+ $(OBJ_PATH)\$O\err.obj \
+ $(OBJ_PATH)\$O\netbuf.obj \
+ $(OBJ_PATH)\$O\netdb.obj \
+ $(OBJ_PATH)\$O\netifapi.obj \
+ $(OBJ_PATH)\$O\sockets.obj \
+ $(OBJ_PATH)\$O\tcpip.obj \
+
+
+
+
+
+# lowercased
+BASEDIR=c:\winddk\7600.16385.1
+OBJECT_ROOT=c:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=i:\workspace\windriver\kksstack-0.1\lwip\src\api
+OBJ_PATH=i:\workspace\windriver\kksstack-0.1\lwip\src\api
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0

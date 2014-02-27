@@ -1,0 +1,27 @@
+TARGETNAME=lwip_core
+TARGETPATH=..\..\..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+#TARGETLIBS=objs\i386\ipv4.lib
+			
+INCLUDES=..\..\..\include;..\include;..\include\ipv4
+
+SOURCES=def.c \
+		dhcp.c \
+		dns.c \
+		init.c \
+		mem.c \
+		memp.c \
+		netif.c \
+		pbuf.c \
+		raw.c \
+		stats.c \
+		sys.c \
+		tcp.c \
+		tcp_in.c \
+		tcp_out.c \
+		timers.c \
+		udp.c
+
+MSC_WARNING_LEVEL=/W3
+

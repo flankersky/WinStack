@@ -1,0 +1,34 @@
+TARGETNAME=tcpip
+TARGETPATH=..\objs
+TARGETTYPE=EXPORT_DRIVER
+
+
+C_DEFINES = -DWIN9X_COMPAT_SPINLOCK
+TARGETLIBS=$(DDK_LIB_PATH)\ndis.lib \
+			..\objs\i386\datalink.lib \
+			..\objs\i386\lan.lib \
+			..\objs\i386\lwip.lib \
+			..\objs\i386\lwip_api.lib \
+			..\objs\i386\lwip_core.lib \
+			..\objs\i386\lwip_ipv4.lib \
+			..\objs\i386\lwip_snmp.lib \
+			..\objs\i386\network.lib \
+			..\objs\i386\transport.lib
+			
+INCLUDES=.\include;..\include;..\lwip\src\include;..\lwip\src\include\ipv4
+
+
+SOURCES=dispatch.c \
+		fileobjs.c \
+		ninfo.c \
+		info.c \
+		iinfo.c \
+		ainfo.c \
+		lock.c \
+		main.c \
+		buffer.c \
+		proto.c \
+		wait.c \
+		resource.rc
+
+MSC_WARNING_LEVEL=/W0

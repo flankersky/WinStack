@@ -1,0 +1,24 @@
+NAME=lwip_ppp
+TARGETPATH=..\..\..\..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+
+			
+INCLUDES=..\..\..\..\include;..\..\include;..\..\include\ipv4
+
+SOURCES=auth.c \
+		chap.c \
+		chpms.c \
+		fsm.c \
+		ipcp.c \
+		lcp.c \
+		magic.c \
+		md5.c \
+		pap.c \
+		ppp.c \
+		ppp_oe.c \
+		randm.c \
+		vj.c
+
+MSC_WARNING_LEVEL=/W3
+

@@ -1,0 +1,17 @@
+TARGETNAME=lwip_snmp
+TARGETPATH=..\..\..\..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+			
+INCLUDES=..\..\..\..\include;..\..\include;..\..\include\ipv4
+
+
+SOURCES=asn1_dec.c \
+		asn1_enc.c \
+		mib_structs.c \
+		mib2.c \
+		msg_in.c \
+		msg_out.c
+
+MSC_WARNING_LEVEL=/W3 /WX
+

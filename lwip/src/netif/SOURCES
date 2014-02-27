@@ -1,0 +1,16 @@
+NAME=lwip_netif
+TARGETPATH=..\..\..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+#TARGETLIBS=objs\ppp.lib
+			
+INCLUDES=..\..\..\include;..\include;..\include\ipv4
+
+
+SOURCES=etharp.c \
+		ethernetif.c \
+		loopif.c \
+		slipif.c
+
+MSC_WARNING_LEVEL=/W3
+

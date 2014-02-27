@@ -1,0 +1,17 @@
+TARGETNAME=lwip
+TARGETPATH=..\..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+#TARGETLIBS=$(DDK_LIB_PATH)\tdi.lib
+
+			
+INCLUDES=..\..\include;.\include;.\include\ipv4;.\include\lwip;..\..\tcpip\include
+
+
+SOURCES=rosip.c \
+		rosmem.c \
+		rostcp.c \
+		sys_arch.c
+		
+MSC_WARNING_LEVEL=/W3
+

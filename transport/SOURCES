@@ -1,0 +1,21 @@
+TARGETNAME=transport
+TARGETPATH=..\objs
+TARGETTYPE=DRIVER_LIBRARY
+
+INCLUDES=..\include;..\lwip\src\include;..\lwip\src\include\ipv4;..\tcpip\include
+
+C_DEFINES = -DWIN9X_COMPAT_SPINLOCK
+
+SOURCES= datagram.c \
+		udp.c \
+		rawip.c \
+		accept.c \
+		event.c \
+		if.c \
+		tcp.c \
+		workqueue.c
+		 
+
+
+MSC_WARNING_LEVEL=/W3
+

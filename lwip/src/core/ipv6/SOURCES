@@ -1,0 +1,19 @@
+TARGETNAME=tcpip
+TARGETPATH=..\objs
+TARGETTYPE=EXPORT_DRIVER
+
+#TARGETLIBS= $(DDK_LIB_PATH)\ndis.lib \
+			..\..\objs\i386\datalink.lib \
+			..\..\objs\i386\lan.lib \
+			..\..\objs\i386\network.lib \
+			..\..\objs\i386\transport.lib \
+		    ..\..\objs\i386\lwip.lib
+			
+INCLUDES=..\include;..\lwip\include;..\..\lib\lwip\include\ipv4
+
+
+SOURCES=main.c \
+		resource.rc
+
+MSC_WARNING_LEVEL=/W3 /WX
+
